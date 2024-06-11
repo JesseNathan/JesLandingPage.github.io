@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  ; /* Include padding and border in element's total width and height */
+  transition: all 0.3s;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: aliceblue;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(33, 37,41,0.4976584383753502) 100%);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 97;
+  transition: all .3s ease;
+  height: 60px;
+}
+
+.navbar img{
+  height: 40px;
+  width: 90px;
+  /* align-content: center; */
+  margin-top: 20px;
+}
+
+.toggle-mode2{
+  display: none;
+}
+
+.navbar-toggle, .close {
+  display: none;
+  font-size: 1.5rem;      
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu{
+  display: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  /* display: none; */
+}
+
+.navbar-item {
+  position: relative;
+  margin-right: -15px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+}
+
+.navbar-item::after{
+  content: "";
+  position: absolute;
+  background: #091426;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  transition: 0.5s;
+}
+
+.navbar-item:hover::after{
+  width: 70%;
+}
+
+.navbar-item i{
+  margin-left: 8px;
+}
+
+.svg img{
+  margin-left: 15px;
+  position: absolute;
+  /* background-color: #4267B2; */
+  width: 100px;
+}
+/* End Nav */
+
+.full-width {
+  /* background-color: #f1f1f1; */
+  padding: 20px 0;
+  height: 40px;
+  margin-top: -30px;
+
+}
+
+.container2, .container3, .container4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sub-container2{
+  margin-left: 40px;
+}
+
+.container-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container-text a, i {
+  margin-right: 20px;
+
+}
+
+.area-detail {
+  padding: 20px 0;
+}
+
+.row-left{
+  display: flex;
+  margin-top:10px;
+}
+
+.area-sosmed{
+  padding: 10px 40px;
+  /* position: relative; */
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-sosmed {
+  background-color: #dadada;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn-sosmed:hover {
+  background-color: #365899;
+}
+
+.content-text {
+  padding: 20px ;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 850px;
+}
+
+.content-subtext p {
+  margin-bottom: 20px;
+}
+
+.content-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-card a{
+  text-decoration: none;
+}
+
+.reference-item {
+  margin: 10px;
+  text-decoration: none;
+  color: #142B4F;
+  font-weight: bold;
+  box-shadow: -4px -1px 40px 9px rgba(0,0,0,0.32);
+  -webkit-box-shadow: -4px -1px 40px 9px rgba(0,0,0,0.32);
+  -moz-box-shadow: -4px -1px 40px 9px rgba(0,0,0,0.32)
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(5) 1fr;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 210.5px;
+}
+
+.reference-item:hover{
+  transform: scale(.95);
+}
+
+.reference-item:active{
+  transform: scale(.9);
+}
+
+.img-top img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.card-date {
+  position: relative;
+  bottom: 5px;
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.read-more {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.read-more p{
+  font-size: 11px;
+  color: #2e6eba;
+}
+
+.read-more i{
+  position: relative;
+  left: 8px;
+}
+
+/*  */
+.footer-container {
+  background-color: #091426;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  height: 395px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+
+.footer-logo-sosmed {
+  /* display: flex; */
+  align-items: center;
+}
+
+.footer-logo-sosmed img {
+  margin-left: 10px;
+}
+
+.footer-social-links a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 1.5em;
+  text-decoration: none;
+
+}
+
+.footer-social-links i{
+  color: white;
+  margin-right: 10px;
+  position: relative;
+  left: -20px;
+}
+
+.footer-social-links a:hover i {
+  transform: scale(1.2); /* Perbesar ikon sebesar 20% */
+}
+
+/* Warna khusus untuk setiap ikon saat dihover */
+.footer-social-links a[href*="facebook.com"]:hover i {
+  color: #3b5998; 
+}
+
+.footer-social-links a[href*="twitter.com"]:hover i {
+  color: #1da1f2; 
+}
+
+.footer-social-links a[href*="instagram.com"]:hover i {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.footer-social-links a[href*="youtube.com"]:hover i {
+  color: #ff0000; 
+}
+
+.footer-social-links a[href*="tiktok.com"]:hover i {
+  color: #000000; 
+}
+
+.footer-other-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+
+.footer-other-links h4 {
+  margin-bottom: 10px;
+  color: #efef60;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.footer-other-links select {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  padding: 5px;
+  font-size: 12px;
+  width: 280px;
+  border-radius: 7px;
+  font-weight: 600;;
+}
+
+.footer-policies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 120px;
+}
+
+.footer-policies a {
+  position: relative;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  /* background-color: #efef60; */
+  padding-right: 10px;
+}
+
+.footer-policies a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #ddd;
+  margin-left: 10px;
+}
+
+.footer-policies a[href*="about-us"]::after {
+  display: none;
+}
+
+.footer-policies a:hover {
+  text-decoration: underline;
+}
+
+.footer-text{
+  margin-top: 60px;
+  color: #fff;
+  width: 820px;
+  margin-inline: auto;
+  font-size: 9px;
+  text-align: center;
+  line-height: 14px;
+}

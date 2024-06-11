@@ -1,0 +1,535 @@
+.stuck {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 50px;
+}
+.dark-mode{
+  background-color: #101C32;
+  color: #ffffff;
+}
+
+.dark-mode a{
+  color: #ffffff;
+}
+
+.dark-mode .content-text{
+  background: transparent;
+  color: #ffffff;
+}
+
+.dark-mode .container-text a{
+  color: #fff;
+}
+
+.dark-mode .reference-item {
+  box-shadow: -4px -1px 40px 9px rgba(255,255,255,0.32);
+  -webkit-box-shadow: -4px -1px 40px 9px rgba(255,255,255,0.32);
+  -moz-box-shadow: -4px -1px 40px 9px rgba(255,255,255,0.32);
+}        
+
+.dark-mode .mb-2 p{
+  color: #fff;
+}
+
+/*  */
+.navbar.scrolled {
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,0.5760898109243697) 0%, rgba(33,37,41,0.5564819677871149) 100%);
+  height: 40px; 
+  padding-bottom: 40px;   
+}
+
+ /*  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: white; 
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  background-color: #fff; 
+  color: #142b4f; 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757; 
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*  */
+.sidebar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgb(109 81 156 / 94%) ;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: none;
+  padding-top: 33px;
+  /* padding-inline: 20px; */
+}
+
+#close-sidebar:hover{
+  opacity: .7;
+}
+
+#close-sidebar:active{
+  transform: scale(0.8);
+}
+
+.center-sidebar{
+  margin-inline: auto;
+  max-width: 230px;
+  font-size: 11px;
+}
+
+.center-sidebar button {
+  background: transparent linear-gradient(289deg, #58e5a9 0, #77eded 100%) 0 0 no-repeat padding-box;
+  border-radius: 7px;
+  letter-spacing: .35px;
+  padding: 8px auto 0 auto; 
+  height: 33px;
+  line-height: 17px; 
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 25px;
+  width: 230px;
+  font-size: 12px;
+}
+
+
+.content1-sidebar{
+  display: flex;
+}
+
+.content1-sidebar img{
+  width: 28px;
+  height: 28px;
+}
+
+.content1-sidebar p{
+  font-size: 11px;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.content1-sidebar i{
+  font-size: 24px;
+  position: relative;
+  left: 115px;
+}
+
+#sidebar-option{
+  width: 230px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 11px;
+  margin: 10px 0 24px;
+}
+
+.checkbox input{
+  width: 11px;
+  height: 11px;
+  margin-bottom: 7px;
+}
+
+
+.popup-overlay {
+  width: 100%;
+  height: 1800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 50%);
+  z-index: 96;
+  display: none;
+}
+
+/* Rensponsive */
+
+@media (max-width: 951px) {
+  .content-text h1 {
+    font-size: 60px !important;
+    margin-bottom: 15px;
+}
+}
+
+@media (max-width: 880px) {
+  body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .navbar-menu{
+    display: none;
+  }
+
+  .menu.active{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0/90%);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+  }
+
+  .menu.active ul li{
+    margin-bottom: 20px;
+    list-style: none;
+    width: 150px;
+  }
+
+  .menu.active ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu.active ul:hover li a{
+    color: rgb(255 255 255/40%);
+  }
+  
+  .menu.active ul li a:hover{
+    color: white;
+  }
+
+  .dropdown-menu span{
+    font-size: 10px !important;
+    margin-left: 7px;
+  }
+
+  .dropdown-bars{
+    margin-left: 10px;
+    display: none;
+  }
+  
+  .dropdown-bars a{
+    display: flex;
+  }
+
+  nav{
+    position: relative;
+    flex-direction: row-reverse;
+  }
+
+  .toggle-mode2{
+    display: block;
+    position: absolute;
+    margin-left: -35px;
+    left: 0;
+    top: -10px;
+  }
+
+  .navbar-toggle{
+    display: block;
+    font-size: 1.5rem;      
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* left: 150px; */
+  }
+
+  .close{
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+    display: block;
+    top: 50px;
+  }
+  
+  .close .close-btn{
+    background: none;
+    font-size: 2rem;      
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .close .close-btn:hover{
+    color: rgb(255 255 255/40%);
+  }
+
+  .footer-text{
+    margin-inline: auto;
+    width: 95%;
+  }
+  
+  .row-left{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .row-left  .flex-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+  }
+
+  .row-left  .flex-column button{
+    margin: 20px;
+  }
+
+  .container4{
+    margin-top: -50px;
+  }
+
+}
+
+@media (max-width: 855px) {
+  .footer-content{
+    flex-direction: column;
+  }
+
+  .footer-social-links{
+    margin: 10px 0;
+  }
+
+  .content-card{
+    justify-content: center;
+  }
+
+  .content-text {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin-inline: auto;
+  }
+    
+
+.content-text h1 {
+    font-size: 50px !important;
+    margin-bottom: 15px;
+}
+
+.content-subtext {
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 730px) {
+
+  .content-text {
+    padding: 5px;
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 604px) {
+  .content-card{
+    margin-inline: auto;
+    width: 50%;
+  }
+
+  .container4 h1{
+    text-align: center;
+    font-size: 39px;
+  }
+
+  .content-text {
+    padding: 5px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .content-text h1{
+    font-size: 45px !important;
+  } 
+
+  .footer-container{
+    height: 430px;
+  }
+
+  .footer-logo-sosmed{
+    margin-left: 70px;
+  }
+
+  .select-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .footer-other-links select {
+    justify-content: center;
+    width: 400px;
+  }  
+
+  .footer-policies{
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 510px) {
+  .content-text {
+    padding: 5px;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .content-text h1 {
+    font-size: 35px !important;
+    margin-bottom: 15px;
+  } 
+
+  .content-subtext {
+      font-size: .75rem;
+  }
+
+  .footer-policies{
+    margin-left: 20px;
+  }
+
+  .footer-policies a{
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 455px) {
+  .content-text {
+    padding: 5px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .footer-other-links select {
+    justify-content: center;
+    width: 350px;
+  }    
+
+  .footer-container{
+    height: 480px;
+  }
+}
+
+@media (max-width: 400px) {
+  .content-text {
+    padding: 5px;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .container4 h1{
+    font-size: 30px !important;
+  }
+
+  .container-text a, .container-text i{ 
+    font-size: .75rem;
+  }
+
+  .footer-other-links select {
+    justify-content: center;
+    width: 300px;
+  }    
+}
+
+@media (max-width: 350px) {
+  .content-text {
+    padding: 5px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-other-links select {
+    justify-content: center;
+    width: 250px;
+  }    
+
+  .footer-social-links {
+    margin-left: -35px;
+  }
+
+  .sub-container2{
+    margin: 0;
+   }
+
+}
+
+@media (max-width: 325px) {
+  .footer-social-links {
+    margin-left: -40px;
+  }
+}
+
+@media (max-width: 315px) {
+  .content-text {
+    padding: 5px;
+    width: 270px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .content-text h1 {
+    font-size: 20px !important;
+    margin-bottom: 15px;
+  }
+
+  .content-subtext {
+    font-size: .70rem;
+  }
+
+  .container4 h1{
+    font-size: 25px !important;
+  }
+
+ .sub-container2{
+  margin: 0;
+ }
+  
+  .container-text a, .container-text i{ 
+    font-size: .75rem;
+  }
+
+  .container-text a{
+    margin: 0;
+  } 
+
+  .footer-container img{
+    margin-left: -20px;
+  }
+
+  .footer-social-links {
+    margin-left: -48px;
+  }
+
+ .footer-other-links{
+  margin-left: -20px;
+   line-height: 15px;
+ }
+
+ .btn-sosmed{
+  margin: -10px; 
+ }
+}
+
+@media (max-width: 312px) {
+  .footer-social-links {
+    margin-left: -50px;
+  }
+}

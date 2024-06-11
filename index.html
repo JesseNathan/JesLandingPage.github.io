@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Wonderful Indonesia</title>
+</head>
+<body>
+    <!-- Background SideBar -->
+    <div class="popup-overlay" id="popup-overlay"></div> 
+    
+<!-- Navbar  -->
+<nav class="navbar">
+    <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png" alt="" class="responsive-img">
+    <img src="darkmode-off.svg" alt="" style="width: 40px; left: 45px; bottom: -19px; cursor: pointer;" class="toggle-mode2">
+
+    <button class="navbar-toggle" id="navbar-toggle">☰</button>  
+   <div class="menu">
+    <div class="close">
+        <button class="close-btn" id="close-btn">×</button>
+    </div>
+    <ul class="dropdown-menu">
+        <li>
+            <a href="#" class="dropdown-link">What to See <span>▼</span></a>
+            <div class="dropdown-bars">
+                <a href="#">Destination</a>
+                <a href="#">Attraction</a>
+                <a href="#">Events</a>
+            </div>
+        </li>
+        <li>
+            <a href="#" class="dropdown-link">What to Do <span>▼</span></a>
+            <div class="dropdown-bars">
+                <a href="#">5 Wonders</a>
+                <a href="#">Trip Ideas</a>
+                <a href="#">Travel Blog</a>
+            </div>
+        </li>
+        <li>
+            <a href="#" class="dropdown-link">Plan Your Trip <span>▼</span></a>
+            <div class="dropdown-bars">
+                <a href="#">General Information</a>
+                <a href="#">Packages</a>
+            </div>
+        </li>
+        <li><a href="#" id="go-explore">Go Explore</a></li>
+        <li>
+            <a href="#" class="dropdown-link">Essential <span>▼</span></a>
+            <div class="dropdown-bars">
+                <a href="#">Partnership Opportunity</a>
+                <a href="#">Brand Guidance</a>
+                <a href="#">E-Brochure</a>
+                <a href="#">E-Booklet</a>
+            </div>
+        </li>
+        <li><a href="#">GB-EN <span>▼</span></a></li>
+    </ul>
+</div>
+
+  
+    <div class="navbar-menu" id="navbar-menu">
+        <div class="dropdown">
+            <a href="#" class="navbar-item dropdown-toggle">
+                What to See <i class="fa-solid fa-caret-down fa-2xs" style="color: #ffffff;"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">Destination</a>
+                <a href="#">Attraction</a>
+                <a href="#">Events</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="navbar-item dropdown-toggle">
+                What to Do <i class="fa-solid fa-caret-down fa-2xs" style="color: #ffffff;"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">5 Wonders</a>
+                <a href="#">Trip Ideas</a>
+                <a href="#">Travel Blog</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="navbar-item dropdown-toggle">
+                Plan Your Trip <i class="fa-solid fa-caret-down fa-2xs" style="color: #ffffff;"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">General <br>
+                        Information</a>
+                <a href="#">Packages</a>
+            </div>
+        </div>
+        <a href="#" class="navbar-item" id="go-explore" style="margin-right: 10px; margin-top: 2px;">
+            Go Explore 
+        </a>
+        <div class="dropdown">
+            <a href="#" class="navbar-item dropdown-toggle">
+                Essential <i class="fa-solid fa-caret-down fa-2xs" style="color: #ffffff;"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="#">Partnership <br> Opportunity</a>
+                <a href="#">Brand Guidance</a>
+                <a href="#">E-Brochure</a>
+                <a href="#">E-Booklet</a>
+            </div>
+        </div>
+        <a href="#" class="navbar-item">
+            GB-EN <i class="fa-solid fa-caret-down fa-2xs" style="color: #ffffff;"></i>
+        </a>
+        <div class="svg" style="position: relative;">
+            <img src="magnifying-glass (1).png" class="search-icon" alt="" style="width: 25px; height: 25px; top: -33px;">
+            <img src="darkmode-off.svg" alt="" style="width: 40px; left: 45px; bottom: -19px; cursor: pointer;" class="toggle-mode">
+        </div>
+    </div>
+</nav>
+<!--End Navbar  -->
+
+    <!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <div class="center-sidebar">
+        <div class="content1-sidebar">
+            <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/activities/main-banner/icon/whiteicon-goexplore.png" alt="">
+            <p>Go Explore</p>
+            <i class="fa-regular fa-circle-xmark" style="color: #ffffff; cursor: pointer;" id="close-sidebar"></i>
+        </div> <br>
+        <p>Select type of travel</p>
+    
+        <select name="" id="sidebar-option">
+            <option value="">Choose...</option>
+            <option value="">Family</option>
+            <option value="">Couple</option>
+            <option value="">Group</option>
+            <option value="">Adventure</option>
+            <option value="">Business</option>
+            <option value="">Senior</option>
+        </select>
+        
+        <div class="content2-sidebar">
+            <p style="margin-bottom: 5px;">Select Type of Interest</p>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">Nature, Scenic Landscape & Wildlife</label> <br>
+                <input type="checkbox">
+                <label for="">Arts, Culture & Heritage</label> <br>
+                <input type="checkbox">
+                <label for="">Culinary & Wellness</label> <br>
+                <input type="checkbox">
+                <label for="">Recreation & Leisure</label> <br>
+                <input type="checkbox">
+                <label for="">Adventures</label> <br>
+            </div>
+        </div>
+    
+        <button>Explore Indonesia</button>
+    </div>
+</div>
+<!-- End sidebar -->
+
+
+<div class="slide-img">
+    <img src="https://v1.indonesia.travel/content/dam/indtravelrevamp/en/wonderful-indonesia/header2.jpg" alt="" style=" width: 100%;">
+</div>
+
+
+<div class="full-width">
+    <div class="container2">
+        <div class="sub-container2">
+            <span class="container-text">
+                <span><a href="#">Home</a></span>
+                <span class="caret-right"><i class="fa-solid fa-caret-right"></i></span>
+            </span>
+            <span class="container-text">
+                <a href="#">Explore Indonesia: Essential Travel Information</a>
+                <span class="caret-right"><i class="fa-solid fa-caret-right"></i></span>
+            </span>
+            <span class="container-text">
+                <a href="#">Wonderful Indonesia</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- Content Text &  icon sosmed -->
+<div class="area-detail">
+    <div class="container3">
+        <div class="row-left">
+            <div class="area-sosmed">
+                <div class="position-stinky">
+                    <div class="flex-column">
+                        <button><div class="btn-sosmed">
+                            <img src="svgexport-1.svg" alt="">
+                        <button><div class="btn-sosmed">
+                            <img src="svgexport-2.svg" alt="">
+                        <button><div class="btn-sosmed">
+                            <img src="svgexport-3.svg" alt="">
+                        <button><div class="btn-sosmed">
+                                <img src="svgexport-4.svg" alt="">
+                        </div></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-text">
+                            <h1 style="font-size: 70px;">Wonderful Indonesia</h1>   
+                            <div class="content-subtext">
+                                <p>Indonesia is a country blessed with countless wonders. What makes this country unique is its diverse culture and magnificent nature, which should be celebrated and preserved by everyone. Therefore, The Ministry of Tourism and Creative Economy of the Republic of Indonesia presents Wonderful Indonesia, a promise to make Indonesia a place where everyone can enjoy its natural and cultural wonders.</p><br>
+                                <p>Wonderful Indonesia is our commitment to promote various destinations in the archipelago for domestic and international tourism. Based on what tourists seek to explore and experience, the wonders of Indonesia have been divided into five categories: Nature, Culinary & Wellness, Arts & Heritage, Recreation & Leisure, and Adventure. There are many platforms, both online (social media, news outlet, and official website) and offline (brand & institution partnerships, travel promotions, etc.), that are being utilized for Wonderful Indonesia’s campaigns.</p><br>
+                                <p>Wonderful Indonesia welcomes all brands, institutions, and tourism stakeholders to establish partnerships and help spread the word about the abundance of wonders in Indonesia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Content Text &  icon sosmed -->
+
+<!-- Card -->
+<section>
+    <div class="container4">
+        <h1>Suggested for you</h1>
+        <div class="content-card">
+            <!-- disimpan kedalam sugge1st.js -->
+        </div>
+    </div>
+</section>
+<!-- End Card -->
+
+<!-- Footer -->
+<div class="footer-container">
+    <div class="footer-content">
+        <div class="footer-logo-sosmed">
+            <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png" alt="Indonesia Travel Logo" style="height: 60px;">
+            <div class="footer-social-links">
+                <a href="https://w7w.facebook.com/indonesia.travel"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/indtravel"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/indtravel"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/indonesiatravel"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@indtravel"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-other-links">    
+            <div class="select-container">
+                <h4>Visit our other website</h4>
+                <select id="other-websites">
+                    <option value="">Choose Website</option>
+                    <option value="https://www.yachtindonesia.com">Yacht Indonesia</option>
+                    <option value="https://www.cruiseindonesia.com">Cruise</option>yy
+                    <option value="https://www.eventindonesia.com">Event</option>
+                    <option value="https://www.desawisataindonesia.com">Desa Wisata</option>
+                    <option value="https://www.creativeindonesia.com">Creative</option>
+                </select>
+            </div>
+                <div class="footer-policies">
+                    <a href="https://www.indonesia.travel/gb/en/privacy-policy">Cookie Policy</a> 
+                    <a href="https://www.indonesia.travel/gb/en/privacy-policy">Privacy Policy</a> 
+                    <a href="https://www.indonesia.travel/gb/en/terms-and-conditions">Terms and Condition</a> 
+                    <a href="https://www.indonesia.travel/gb/en/contact-us">Contact Us</a> 
+                    <a href="https://www.indonesia.travel/gb/en/about-us">About</a> 
+                </div>
+        </div>
+    </div>
+
+    <div class="footer-text">
+        <p>This is the official website of the Ministry of Tourism, Republic of Indonesia. The contents listed on this website are intended for informational purposes rather than commercial. Any displayed sale is meant as a token of partnership and will always redirect you to our partners' sites.</p>
+    </div>
+</div>
+<!-- End Footer -->
+    
+
+<script src="script.js"></script>
+<script src="Texts.js"></script>
+<script src="suggest.js"></script>
+</body>
